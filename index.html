@@ -104,11 +104,16 @@
   .hero-eyebrow{
     font-size:0.76rem;letter-spacing:3px;text-transform:uppercase;font-weight:500;
     color:#EFE6D8;margin-bottom:24px;line-height:2;
+    text-shadow:0 1px 3px rgba(0,0,0,0.85), 0 3px 14px rgba(0,0,0,0.55);
+    display:inline-block;
+    background:rgba(10,10,12,0.42);
+    -webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px);
+    padding:14px 22px;border-radius:6px;
   }
   .hero-eyebrow span{display:block;}
   .hp-line{display:flex!important;align-items:center;justify-content:center;gap:7px;}
-  .hp-logo{width:16px;height:auto;opacity:0.9;}
-  .hero-content h1{font-size:clamp(2.3rem,5vw,3.6rem);line-height:1.28;color:#fff;font-style:italic;font-weight:400;text-shadow:0 4px 24px rgba(0,0,0,0.35);}
+  .hp-logo{width:16px;height:auto;opacity:0.9;filter:drop-shadow(0 1px 3px rgba(0,0,0,0.7));}
+  .hero-content h1{font-size:clamp(2.3rem,5vw,3.6rem);line-height:1.28;color:#fff;font-style:italic;font-weight:400;text-shadow:0 2px 6px rgba(0,0,0,0.85), 0 6px 26px rgba(0,0,0,0.55), 0 12px 48px rgba(0,0,0,0.35);}
   .hero-content .lead{margin:46px auto 38px;font-size:1.12rem;color:rgba(255,255,255,0.92);max-width:520px;line-height:1.8;text-shadow:0 2px 12px rgba(0,0,0,0.3);}
   .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
 
@@ -180,12 +185,14 @@
   .why-item .mark{font-family:var(--font-serif);font-style:italic;color:var(--gold);font-size:1.3rem;flex-shrink:0;}
   .why-item p{color:var(--ink);font-size:1.02rem;line-height:1.7;}
   .cancel-policy{
-    max-width:680px;margin:44px auto 0;padding:26px 30px;
+    max-width:680px;margin:44px auto 0;padding:32px 34px;
     background:var(--sand);border-radius:2px;
-    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
   }
-  .cancel-label{font-size:0.9rem;color:var(--olive-deep);letter-spacing:0.5px;font-weight:500;}
-  .cancel-value{font-family:var(--font-serif);font-style:italic;color:var(--gray);}
+  .cancel-title{font-size:0.9rem;color:var(--olive-deep);letter-spacing:0.5px;font-weight:500;margin-bottom:20px;}
+  .cancel-row{margin-bottom:16px;}
+  .cancel-row:last-child{margin-bottom:0;}
+  .cancel-row .lbl{font-family:var(--font-serif);font-style:italic;color:var(--ink);font-size:1.02rem;margin-bottom:4px;}
+  .cancel-row p{color:var(--gray);font-size:0.94rem;line-height:1.6;}
 
   /* ===== FAQ ===== */
   #faq{background:var(--olive-pale);}
@@ -296,7 +303,6 @@
       <p>Decidí así ampliar la mirada hacia otras herramientas que pudieran conectar con el interior del ser. Me formé en Psicología Transpersonal, Bioenergética, Biodecodificación Sensoperceptiva y Bioexistencia Consciente.</p>
       <p>Actualmente soy Consultora Certificada de Humano Puente y acompaño personas que desean llegar al origen de su problemática, física, emocional, vincular y también económica.</p>
       <p>No es magia, es trabajo interior: es ahondar en nuestras aguas más profundas hasta encontrar el tesoro que todos somos, y pulirlo hasta que brille en su máxima expresión.</p>
-      <div class="sobre-creds">Farmacéutica (UBA) · Psicología Transpersonal<br>Bioenergética · Biodecodificación Sensoperceptiva<br>Consultora Certificada Humano Puente</div>
     </div>
   </div>
 </section>
@@ -307,7 +313,7 @@
     <div class="section-head reveal">
       <div class="eyebrow">Un enfoque, no una fórmula</div>
       <h2>¿Qué es la Bioexistencia Consciente?</h2>
-      <p>Es un enfoque de acompañamiento que entiende al síntoma como aliado y como la puerta de entrada a un camino de profundo autodescubrimiento. Un camino que recorre nuestra vida contemporánea, la gestacional y la ancestral. Y cuyo objetivo es lograr la integración de nuestras historias y la comprensión de por qué dieron origen al síntoma que se manifiesta.</p>
+      <p>Es un enfoque de acompañamiento que entiende al síntoma como aliado y como la puerta de entrada a un camino de profundo autodescubrimiento. Un camino que recorre nuestra vida contemporánea, gestacional y ancestral. Y cuyo objetivo es lograr la integración de nuestras historias y la comprensión de por qué dieron origen al síntoma que se manifiesta.</p>
     </div>
   </div>
 </section>
@@ -323,7 +329,7 @@
       <div class="help-card reveal">
         <div class="n">I</div>
         <h3>Comprender el origen</h3>
-        <p>Explorar qué hay detrás de lo que te pasa, más allá del síntoma en sí.</p>
+        <p>Explorar qué hay detrás de lo que te incomoda, más allá del síntoma en sí.</p>
       </div>
       <div class="help-card reveal">
         <div class="n">II</div>
@@ -351,18 +357,18 @@
     <div class="section-head reveal">
       <div class="eyebrow">Cómo es el proceso</div>
       <h2>Un recorrido en tres niveles</h2>
-      <p>Cada consulta invita a mirar una misma pregunta desde tres planos distintos de tu historia.</p>
+      <p>El proceso de consulta aborda el síntoma en 3 planos diferentes.</p>
     </div>
     <div class="etapas-grid">
       <div class="etapa reveal">
         <div class="en">01</div>
         <h3>Contemporaneidad</h3>
-        <p>Cómo el síntoma se expresa en tu vida actual, en el aquí y ahora.</p>
+        <p>Cómo el síntoma se manifiesta a lo largo de tu vida.</p>
       </div>
       <div class="etapa reveal">
         <div class="en">02</div>
         <h3>Gestacional</h3>
-        <p>Qué información pudiste incorporar durante tu vida intrauterina.</p>
+        <p>Qué información y vivencias incorporaste en tu vida intrauterina.</p>
       </div>
       <div class="etapa reveal">
         <div class="en">03</div>
@@ -433,7 +439,11 @@
     <div class="why-list">
       <div class="why-item reveal">
         <div class="mark">—</div>
-        <p>Duración de 120 minutos.</p>
+        <p>Duración: 120 minutos.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="mark">—</div>
+        <p>Frecuencia: mensual.</p>
       </div>
       <div class="why-item reveal">
         <div class="mark">—</div>
@@ -449,8 +459,15 @@
       </div>
     </div>
     <div class="cancel-policy reveal">
-      <div class="cancel-label">Política de cancelación</div>
-      <div class="cancel-value">A definir</div>
+      <div class="cancel-title">Política de confirmación y cancelación</div>
+      <div class="cancel-row">
+        <div class="lbl">Confirmación</div>
+        <p>La sesión solo queda confirmada luego de haber hecho el pago efectivo de la misma.</p>
+      </div>
+      <div class="cancel-row">
+        <div class="lbl">Cancelación</div>
+        <p>Para cancelar o cambiar el turno agendado, se debe avisar con un mínimo de 48 hs previas a la consulta; pasado ese tiempo, el dinero no será reembolsado y para coordinar un nuevo turno se requerirá un nuevo pago.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -464,19 +481,19 @@
     <div class="faq-list">
       <div class="faq-item">
         <button class="faq-q">¿Esto reemplaza un tratamiento médico o psicológico?<span class="plus">+</span></button>
-        <div class="faq-a"><p>No. Es un espacio complementario de autoconocimiento. Si estás bajo tratamiento médico o psicológico, te invito a continuarlo mientras exploramos juntas el significado emocional de lo que atravesás.</p></div>
+        <div class="faq-a"><p>No. Es un espacio complementario de autoconocimiento. Si estás bajo tratamiento médico o psicológico, te invito a continuarlo mientras exploramos juntos el significado emocional de lo que atravesás.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Cómo es la primera consulta?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Es un encuentro para conocernos, entender qué te trae hasta acá y empezar a mirar juntas la historia detrás de eso.</p></div>
+        <div class="faq-a"><p>Es un encuentro para conocernos, entender qué te trae hasta acá y empezar a mirar juntos la historia detrás de eso.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Las consultas son online o presenciales?<span class="plus">+</span></button>
-        <div class="faq-a"><p>Trabajo de ambas formas — coordinamos la modalidad que mejor se adapte a vos.</p></div>
+        <div class="faq-a"><p>La modalidad es online.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Cuántas consultas necesito?<span class="plus">+</span></button>
-        <div class="faq-a"><p>No hay un número fijo. Cada proceso tiene su propio tiempo, y eso lo vamos descubriendo juntas.</p></div>
+        <div class="faq-a"><p>No hay un número fijo. Cada proceso tiene su propio tiempo, y eso lo vamos descubriendo juntos.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">¿Qué pasa si no sé bien qué me pasa?<span class="plus">+</span></button>
